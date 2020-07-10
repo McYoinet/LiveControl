@@ -1,0 +1,11 @@
+messages:
+  prefix: "&f[&9LiveControlSpigot&f]"
+  errors:
+    connection:
+      - "%prefix% &cCouldn't connect to MySQL database:"
+    sql-exception:
+      - "%prefix% &cException while trying to execute SQL Query:"
+    connect-from-bungeecord: |
+      &cLiveControl Protection
+      &cPlease try to join from
+      &cthe BungeeCord server.
