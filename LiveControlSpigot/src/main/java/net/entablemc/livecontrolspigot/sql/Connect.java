@@ -20,11 +20,11 @@ public class Connect {
     public Connection con;
 
     public void connect() {
-        final String host = pluginUtils.host.getString("hostname");
-        final int port = pluginUtils.host.getInt("port");
-        final String user = pluginUtils.host.getString("username");
-        final String password = pluginUtils.host.getString("password");
-        final String database = pluginUtils.host.getString("database");
+        String host = pluginUtils.host.getString("hostname");
+        int port = pluginUtils.host.getInt("port");
+        String user = pluginUtils.host.getString("username");
+        String password = pluginUtils.host.getString("password");
+        String database = pluginUtils.host.getString("database");
 
         try {
             Class.forName("com.mysql.jdbc.Driver");
