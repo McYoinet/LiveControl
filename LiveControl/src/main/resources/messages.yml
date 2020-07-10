@@ -1,0 +1,12 @@
+messages:
+  prefix: "&f[&9LiveControl&f]"
+  errors:
+    connection:
+      - "%prefix% &cCouldn't connect to MySQL database:"
+    sql-exception:
+      - "%prefix% &cException while trying to execute SQL Query:"
+    player-already-connected: |
+      &cLiveControl Protection
+      &cYou are alraedy playing on this proxy.
+      &cContact the staff team if you think
+      &cthat this is an error.
