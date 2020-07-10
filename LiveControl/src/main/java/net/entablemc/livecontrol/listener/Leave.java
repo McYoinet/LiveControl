@@ -28,6 +28,8 @@ public class Leave implements Listener {
         try{
             Connect connect = new Connect(plugin, pluginUtils);
 
+            connect.connect();
+
             Statement stmt = connect.con.createStatement();
             ResultSet rs = stmt.executeQuery("SELECT Player FROM players");
 

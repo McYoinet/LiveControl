@@ -20,14 +20,13 @@ public class Join implements Listener {
     private LiveControl plugin;
 
     public Join(PluginUtils pluginUtils, LiveControl plugin){
-        Join.this.pluginUtils = pluginUtils;
-        Join.this.plugin = plugin;
+        this.pluginUtils = pluginUtils;
+        this.plugin = plugin;
     }
-
-    Connect connect = new Connect(plugin, pluginUtils);
 
     @EventHandler
     public void onPostLogin(PostLoginEvent event){
+        Connect connect = new Connect(plugin, pluginUtils);
 
         connect.connect();
         try {
